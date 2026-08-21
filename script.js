@@ -1,47 +1,47 @@
-// ================= DATABASE (MOVIES + WEB SERIES + MULTI-QUALITY BIGG BOSS) =================
+// ================= DATABASE (MOVIES + WEB SERIES + BIGG BOSS) =================
 const moviesDatabase = [
     {
         id: 1,
         type: "movie",
-        featured: true, // 👈 టాప్ హీరో బ్యానర్‌లో స్లైడ్ అవ్వడానికి
-        title: "Mister Middleclass",
-        year: "2026",
+        featured: true,
+        title: "Pushpa 2: The Rule",
+        year: "2024",
         rating: "8.9",
         quality: "4K UHD",
-        category: "Tollywood",
+        category: "Netflix", // DVDRips / Netflix / Prime / Hotstar / Zee5
         ott: "Netflix",
         language: "Telugu (Original)",
         genres: "Action / Crime / Drama",
         director: "Sukumar",
         cast: "Allu Arjun, Rashmika Mandanna, Fahadh Faasil",
-        poster: "mister middleclass.jpg",
-        backdrop: "mister.jpg", // 👈 మీ కస్టమ్ 16:9 బ్యానర్
+        poster: "https://image.tmdb.org/t/p/w500/b0mx1pB3KptpZqT6m6z2s9p2wX5.jpg",
+        backdrop: "https://image.tmdb.org/t/p/original/8bp9L2fR5qf1aA5oY5UvC9H3k3S.jpg",
         trailerUrl: "https://www.youtube.com/embed/g3L556vA3Bw",
         description: "Pushpa Raj expands his syndicate globally while locked in an intense battle of wits and power against SP Bhanwar Singh Shekhawat.",
         downloads: [
-            { quality: "480p SD - Mobile Quality", size: "~450 MB | x264", direct: "https://t.me/+fKBhkM9ddl5lNWQ1", files: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "720p HD - Standard Quality", size: "~1.2 GB | HEVC", direct: "https://t.me/+fKBhkM9ddl5lNWQ1", files: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "1080p FHD - Full HD Quality", size: "~2.4 GB | 5.1 Audio", direct: "https://t.me/+fKBhkM9ddl5lNWQ1", files: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "4K UHD - Ultra HD HDR", size: "~6.5 GB | Atmos", direct: "https://t.me/+fKBhkM9ddl5lNWQ1", files: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" }
+            { quality: "480p SD - Mobile Quality", size: "~450 MB | x264", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
+            { quality: "720p HD - Standard Quality", size: "~1.2 GB | HEVC", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
+            { quality: "1080p FHD - Full HD Quality", size: "~2.4 GB | 5.1 Audio", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
+            { quality: "4K UHD - Ultra HD HDR", size: "~6.5 GB | Atmos", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" }
         ]
     },
     {
         id: 2,
-        type: "show", // 👈 బిగ్ బాస్ డైలీ షో కోసం
+        type: "show",
         featured: true,
-        title: "Bigg Boss Agnipariksha",
-        year: "2026",
+        title: "Bigg Boss Telugu Season 8",
+        year: "2024",
         rating: "8.4",
         quality: "Daily Updates",
-        category: "OTT",
+        category: "Hotstar",
         ott: "Hotstar",
-        seasonInfo: "Season 10",
+        seasonInfo: "Season 8 (Daily Episode Updates)",
         language: "Telugu (Original)",
         genres: "Reality TV / Entertainment / Drama",
         director: "Star Maa",
         cast: "Nagarjuna Akkineni (Host) & Contestants",
-        poster: "bigg boss agnipariksha.jpg",
-        backdrop: "bigg.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/8dJyOQ2vXG6mX2T7x0V8iGZz7gA.jpg",
+        backdrop: "https://image.tmdb.org/t/p/original/8dJyOQ2vXG6mX2T7x0V8iGZz7gA.jpg",
         trailerUrl: "https://www.youtube.com/embed/example",
         description: "Contestants from various backgrounds are isolated together in a specially constructed house, facing daily tasks, nominations, and weekend eliminations.",
         episodes: [
@@ -49,18 +49,18 @@ const moviesDatabase = [
                 epTitle: "Episode 02 (Day 2 - Captaincy Task)",
                 airDate: "02 Sept 2024",
                 qualities: [
-                    { res: "480p SD", size: "~250 MB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_480" },
-                    { res: "720p HD", size: "~550 MB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_720" },
-                    { res: "1080p FHD", size: "~1.1 GB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_1080" }
+                    { res: "480p SD", size: "~250 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_480" },
+                    { res: "720p HD", size: "~550 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_720" },
+                    { res: "1080p FHD", size: "~1.1 GB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_1080" }
                 ]
             },
             {
                 epTitle: "Episode 01 (Grand Premiere Launch)",
                 airDate: "01 Sept 2024",
                 qualities: [
-                    { res: "480p SD", size: "~350 MB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_480" },
-                    { res: "720p HD", size: "~800 MB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_720" },
-                    { res: "1080p FHD", size: "~1.6 GB", getFiles: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_1080" }
+                    { res: "480p SD", size: "~350 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_480" },
+                    { res: "720p HD", size: "~800 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_720" },
+                    { res: "1080p FHD", size: "~1.6 GB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_1080" }
                 ]
             }
         ]
@@ -73,7 +73,7 @@ const moviesDatabase = [
         year: "2023",
         rating: "8.5",
         quality: "1080p FHD",
-        category: "Series",
+        category: "Prime",
         ott: "Prime",
         seasonInfo: "Season 1 Complete",
         language: "Telugu (Original)",
@@ -89,31 +89,28 @@ const moviesDatabase = [
                 qualityBadge: "480p SD Quality",
                 zipTitle: "Complete Season 1 Zip Pack (480p)",
                 zipSize: "~1.2 GB (All Episodes in 1 Zip)",
-                directZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
-                fastZip: "https://gofile.io/d/sample",
-                telegramBot: "https://t.me/+fKBhkM9ddl5lNWQ1"
+                cloudZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
+                fastZip: "https://gofile.io/d/sample"
             },
             {
                 qualityBadge: "720p HD Quality",
                 zipTitle: "Complete Season 1 Zip Pack (720p)",
                 zipSize: "~2.8 GB (All Episodes in 1 Zip)",
-                directZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
-                fastZip: "https://gofile.io/d/sample",
-                telegramBot: "https://t.me/+fKBhkM9ddl5lNWQ1"
+                cloudZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
+                fastZip: "https://gofile.io/d/sample"
             },
             {
                 qualityBadge: "1080p FHD Quality",
                 zipTitle: "Complete Season 1 Zip Pack (1080p)",
                 zipSize: "~5.5 GB (All Episodes 5.1 Audio)",
-                directZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
-                fastZip: "https://gofile.io/d/sample",
-                telegramBot: "https://t.me/+fKBhkM9ddl5lNWQ1"
+                cloudZip: "https://t.me/+fKBhkM9ddl5lNWQ1",
+                fastZip: "https://gofile.io/d/sample"
             }
         ]
     }
 ];
 
-// ================= HERO BANNER AUTO-SLIDER (DYNAMIC BACKDROP) =================
+// ================= HERO BANNER AUTO-SLIDER =================
 let currentHeroSlideIndex = 0;
 let heroSliderInterval = null;
 
@@ -208,7 +205,7 @@ function resetHeroSliderAutoPlay() {
     startHeroSliderAutoPlay();
 }
 
-// ================= PAGINATION & MOVIES GRID (DIRECT ORDER) =================
+// ================= PAGINATION & MOVIES GRID =================
 let currentPage = 1;
 const moviesPerPage = 6;
 let currentList = [];
@@ -316,11 +313,11 @@ function openMovieDetails(id, pushHistory = true) {
     const seriesBadge = document.getElementById('seriesBadgeInfo');
     const dlContainer = document.getElementById('dynamicDownloadContainer');
 
-    // 1. BIGG BOSS / REALITY SHOW LAYOUT (EPISODE CONTAINERS WITH 480p, 720p, 1080p)
+    // 1. BIGG BOSS / REALITY SHOWS
     if (item.type === 'show') {
         seriesBadge.innerText = item.seasonInfo || "Daily Reality Show";
         seriesBadge.classList.remove('hidden');
-        document.getElementById('downloadSectionTitle').innerHTML = `<i class="fas fa-tv text-orange-400"></i> Daily Episodes (480p | 720p | 1080p)`;
+        document.getElementById('downloadSectionTitle').innerHTML = `<i class="fas fa-tv text-orange-400"></i> Daily Episodes (Cloud & Fast Download)`;
 
         dlContainer.innerHTML = item.episodes.map(ep => `
             <div class="p-4 sm:p-5 rounded-2xl bg-brand-darkBg/95 border border-brand-cardBorder space-y-3.5 shadow-xl hover:border-orange-500/40 transition-all">
@@ -344,11 +341,11 @@ function openMovieDetails(id, pushHistory = true) {
                             </div>
 
                             <div class="grid grid-cols-2 gap-2 sm:w-auto w-full">
-                                <button data-url="${q.getFiles}" onclick="startDownloadTimer(this, 'Telegram Bot (${ep.epTitle} - ${q.res})')" class="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 text-white font-bold text-[11px] py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow-md shadow-blue-600/20">
-                                    <i class="fab fa-telegram-plane"></i> Get Files
+                                <button data-url="${q.cloudDownload}" onclick="startDownloadTimer(this, 'Cloud Download (${ep.epTitle} - ${q.res})')" class="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 text-white font-bold text-[11px] py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow-md shadow-emerald-600/20 transition-all">
+                                    <i class="fas fa-cloud-arrow-down"></i> Cloud Download
                                 </button>
-                                <button data-url="${q.fastDownload}" onclick="startDownloadTimer(this, 'Fast Download (${ep.epTitle} - ${q.res})')" class="bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 text-white font-bold text-[11px] py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow-md shadow-purple-600/20">
-                                    <i class="fas fa-bolt"></i> Fast Cloud
+                                <button data-url="${q.fastDownload}" onclick="startDownloadTimer(this, 'Fast Download (${ep.epTitle} - ${q.res})')" class="bg-gradient-to-r from-purple-600 to-purple-500 hover:from-purple-500 text-white font-bold text-[11px] py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow-md shadow-purple-600/20 transition-all">
+                                    <i class="fas fa-bolt"></i> Fast Download
                                 </button>
                             </div>
                         </div>
@@ -361,7 +358,7 @@ function openMovieDetails(id, pushHistory = true) {
     } else if (item.type === 'series') {
         seriesBadge.innerText = item.seasonInfo || "Web Series";
         seriesBadge.classList.remove('hidden');
-        document.getElementById('downloadSectionTitle').innerHTML = `<i class="fas fa-tv text-emerald-400"></i> Series Downloads (Zip Packs & Telegram Bot)`;
+        document.getElementById('downloadSectionTitle').innerHTML = `<i class="fas fa-tv text-emerald-400"></i> Series Downloads (Zip Packs)`;
 
         dlContainer.innerHTML = item.seriesPacks.map(pack => `
             <div class="p-4 rounded-2xl bg-brand-darkBg/95 border border-brand-cardBorder space-y-3.5 shadow-lg">
@@ -377,35 +374,21 @@ function openMovieDetails(id, pushHistory = true) {
 
                 <div class="space-y-1.5">
                     <div class="text-[11px] text-yellow-400 font-semibold flex items-center gap-1.5">
-                        <i class="fas fa-file-zipper"></i> Complete Season in Single Zip File:
+                        <i class="fas fa-file-zipper"></i> Complete Season Zip:
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        <button data-url="${pack.directZip}" onclick="startDownloadTimer(this, 'Direct Zip (${pack.qualityBadge})')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
-                            <i class="fas fa-download"></i> Direct Download Zip
+                        <button data-url="${pack.cloudZip}" onclick="startDownloadTimer(this, 'Cloud Zip (${pack.qualityBadge})')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md transition-all">
+                            <i class="fas fa-cloud-arrow-down"></i> Cloud Download Zip
                         </button>
-                        <button data-url="${pack.fastZip}" onclick="startDownloadTimer(this, 'Fast Cloud (${pack.qualityBadge})')" class="bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
-                            <i class="fas fa-bolt"></i> Fast Cloud Zip
+                        <button data-url="${pack.fastZip}" onclick="startDownloadTimer(this, 'Fast Cloud Zip (${pack.qualityBadge})')" class="bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md transition-all">
+                            <i class="fas fa-bolt"></i> Fast Download Zip
                         </button>
                     </div>
-                </div>
-
-                <div class="relative flex py-1 items-center">
-                    <div class="flex-grow border-t border-brand-cardBorder"></div>
-                    <span class="flex-shrink mx-3 text-[10px] uppercase font-bold text-gray-400 bg-brand-cardBg px-2 py-0.5 rounded-full border border-brand-cardBorder">
-                        OR (Get Episode-wise via Telegram)
-                    </span>
-                    <div class="flex-grow border-t border-brand-cardBorder"></div>
-                </div>
-
-                <div>
-                    <button data-url="${pack.telegramBot}" onclick="startDownloadTimer(this, 'Telegram Episodes Bot (${pack.qualityBadge})')" class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 text-white font-bold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md shadow-blue-600/20">
-                        <i class="fab fa-telegram-plane text-sm"></i> Get ${pack.qualityBadge} Episodes (Telegram Bot / Leech)
-                    </button>
                 </div>
             </div>
         `).join('');
 
-    // 3. REGULAR MOVIES LAYOUT
+    // 3. REGULAR MOVIES
     } else {
         seriesBadge.classList.add('hidden');
         document.getElementById('downloadSectionTitle').innerHTML = `<i class="fas fa-download text-emerald-400"></i> Download Links & Qualities`;
@@ -419,14 +402,11 @@ function openMovieDetails(id, pushHistory = true) {
                     </div>
                     <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold px-2 py-0.5 rounded">Fast</span>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                    <button data-url="${dl.direct}" onclick="startDownloadTimer(this, 'Direct Download')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
-                        <i class="fas fa-download"></i> Direct Download
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <button data-url="${dl.cloud}" onclick="startDownloadTimer(this, 'Cloud Download')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md transition-all">
+                        <i class="fas fa-cloud-arrow-down"></i> Cloud Download
                     </button>
-                    <button data-url="${dl.files}" onclick="startDownloadTimer(this, 'Get Files / Bot')" class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
-                        <i class="fab fa-telegram-plane"></i> Get Files
-                    </button>
-                    <button data-url="${dl.fast}" onclick="startDownloadTimer(this, 'Fast Cloud Download')" class="bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
+                    <button data-url="${dl.fast}" onclick="startDownloadTimer(this, 'Fast Download')" class="bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md transition-all">
                         <i class="fas fa-bolt"></i> Fast Download
                     </button>
                 </div>
@@ -445,6 +425,48 @@ function openMovieDetails(id, pushHistory = true) {
     }
 }
 
+// ================= DYNAMIC CATEGORY & OTT FILTERING =================
+function filterCategory(cat) {
+    currentPage = 1;
+
+    // బటన్ కలర్స్ మార్చడం
+    document.querySelectorAll('.filter-chip').forEach(btn => {
+        btn.classList.remove('active', 'bg-brand-red', 'text-white');
+        btn.classList.add('bg-brand-cardBg', 'text-gray-300');
+    });
+    
+    if (window.event && window.event.target) {
+        const clickedBtn = window.event.target.closest('.filter-chip');
+        if (clickedBtn) {
+            clickedBtn.classList.add('active', 'bg-brand-red', 'text-white');
+            clickedBtn.classList.remove('bg-brand-cardBg', 'text-gray-300');
+        }
+    }
+
+    const data = [...moviesDatabase];
+
+    if (cat === 'ALL') {
+        renderPaginatedMovies(data);
+    } else if (cat === 'Series') {
+        // సిరీస్ & టీవీ షోలను మాత్రమే ఫిల్టర్ చేస్తుంది
+        const filtered = data.filter(m => m.type === 'series' || m.type === 'show');
+        renderPaginatedMovies(filtered);
+    } else {
+        // Prime, Netflix, Hotstar, Zee5, DVDRips లలో ఉన్న సినిమాలు & సిరీస్‌లు రెండింటినీ చూపిస్తుంది
+        const filtered = data.filter(m => 
+            (m.ott && m.ott.toLowerCase().includes(cat.toLowerCase())) ||
+            (m.category && m.category.toLowerCase().includes(cat.toLowerCase())) ||
+            (m.quality && m.quality.toLowerCase().includes(cat.toLowerCase()))
+        );
+        renderPaginatedMovies(filtered);
+    }
+}
+
+function navFilterCategory(cat) {
+    showHomeView(false);
+    filterCategory(cat);
+}
+
 // ================= PAGE VIEWS & SEARCH =================
 function showHomeView(pushHistory = true) {
     document.getElementById('homeView').classList.remove('hidden');
@@ -459,14 +481,14 @@ function showHomeView(pushHistory = true) {
     document.querySelectorAll('.filter-chip').forEach(btn => {
         btn.classList.remove('active', 'bg-brand-red', 'text-white');
         btn.classList.add('bg-brand-cardBg', 'text-gray-300');
-        if (btn.innerText.includes('All Content') || btn.innerText.includes('All Movies')) {
+        if (btn.innerText.includes('All Content')) {
             btn.classList.add('active', 'bg-brand-red', 'text-white');
             btn.classList.remove('bg-brand-cardBg', 'text-gray-300');
         }
     });
 
     currentPage = 1;
-    renderPaginatedMovies([...moviesDatabase]); // 👈 డైరెక్ట్ ఆర్డర్
+    renderPaginatedMovies([...moviesDatabase]);
 
     if (pushHistory) {
         history.pushState({ view: 'home' }, '', '#home');
@@ -535,55 +557,6 @@ function handleLiveSearch(query) {
         m.title.toLowerCase().includes(q) ||
         m.genres.toLowerCase().includes(q) ||
         m.cast.toLowerCase().includes(q)
-    );
-    renderPaginatedMovies(filtered);
-}
-
-function filterCategory(cat) {
-    currentPage = 1;
-    document.querySelectorAll('.filter-chip').forEach(btn => {
-        btn.classList.remove('active', 'bg-brand-red', 'text-white');
-        btn.classList.add('bg-brand-cardBg', 'text-gray-300');
-    });
-    
-    if (event && event.target && event.target.classList.contains('filter-chip')) {
-        event.target.classList.add('active', 'bg-brand-red', 'text-white');
-        event.target.classList.remove('bg-brand-cardBg', 'text-gray-300');
-    }
-
-    const data = [...moviesDatabase];
-    if (cat === 'ALL') {
-        renderPaginatedMovies(data);
-    } else {
-        const filtered = data.filter(m => 
-            m.category === cat || 
-            m.ott === cat || 
-            (m.quality && m.quality.includes(cat)) || 
-            (cat === 'Series' && (m.type === 'series' || m.type === 'show'))
-        );
-        renderPaginatedMovies(filtered);
-    }
-}
-
-function navFilterCategory(cat) {
-    showHomeView(false);
-    currentPage = 1;
-
-    document.querySelectorAll('.filter-chip').forEach(btn => {
-        btn.classList.remove('active', 'bg-brand-red', 'text-white');
-        btn.classList.add('bg-brand-cardBg', 'text-gray-300');
-        if (btn.innerText.includes(cat) || (cat === 'Series' && (btn.innerText.includes('Web Series') || btn.innerText.includes('Series')))) {
-            btn.classList.add('active', 'bg-brand-red', 'text-white');
-            btn.classList.remove('bg-brand-cardBg', 'text-gray-300');
-        }
-    });
-
-    const data = [...moviesDatabase];
-    const filtered = data.filter(m => 
-        m.category === cat || 
-        m.ott === cat || 
-        (m.quality && m.quality.includes(cat)) || 
-        (cat === 'Series' && (m.type === 'series' || m.type === 'show'))
     );
     renderPaginatedMovies(filtered);
 }
