@@ -110,7 +110,7 @@ const moviesDatabase = [
         genres: "Reality TV / Entertainment / Drama",
         director: "Star Maa",
         cast: "Nagarjuna Akkineni (Host) & Contestants",
-        poster: "images/bigg boss agnipariksha jpg",
+        poster: "images/bigg boss agnipariksha.jpg",
         backdrop: "https://image.tmdb.org/t/p/original/8dJyOQ2vXG6mX2T7x0V8iGZz7gA.jpg",
         trailerUrl: "https://www.youtube.com/embed/example",
         description: "Contestants from various backgrounds are isolated together in a specially constructed house, facing daily tasks, nominations, and weekend eliminations.",
