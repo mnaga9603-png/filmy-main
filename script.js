@@ -116,21 +116,27 @@ const moviesDatabase = [
         description: "Contestants from various backgrounds are isolated together in a specially constructed house, facing daily tasks, nominations, and weekend eliminations.",
         episodes: [
             {
-                epTitle: "Episode 02 (Day 2 - Captaincy Task)",
-                airDate: "02 Sept 2024",
+                epTitle: "Episode 03",
                 qualities: [
-                    { res: "480p SD", size: "~250 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_480" },
-                    { res: "720p HD", size: "~550 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_720" },
-                    { res: "1080p FHD", size: "~1.1 GB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep2_1080" }
+                    { res: "480p SD", size: "~250 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85924?hash=AgADoi", fastDownload: "https://gofile.io/d/fQOvGxV1" },
+                    { res: "720p HD", size: "~550 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85926?hash=AgADoy", fastDownload: "https://gofile.io/d/XPL3TMRe" },
+                    { res: "1080p FHD", size: "~1.1 GB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85928?hash=AgADbi", fastDownload: "https://gofile.io/d/dJuzw6cZ" }
+                ]
+            },
+{
+                epTitle: "Episode 02",
+                qualities: [
+                    { res: "480p SD", size: "~250 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85924?hash=AgADoi", fastDownload: "https://gofile.io/d/fQOvGxV1" },
+                    { res: "720p HD", size: "~550 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85926?hash=AgADoy", fastDownload: "https://gofile.io/d/XPL3TMRe" },
+                    { res: "1080p FHD", size: "~1.1 GB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85928?hash=AgADbi", fastDownload: "https://gofile.io/d/dJuzw6cZ" }
                 ]
             },
             {
-                epTitle: "Episode 01 (Grand Premiere Launch)",
-                airDate: "01 Sept 2024",
+                epTitle: "Episode 01",
                 qualities: [
-                    { res: "480p SD", size: "~350 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_480" },
-                    { res: "720p HD", size: "~800 MB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_720" },
-                    { res: "1080p FHD", size: "~1.6 GB", cloudDownload: "https://t.me/+fKBhkM9ddl5lNWQ1", fastDownload: "https://gofile.io/d/bb8_ep1_1080" }
+                    { res: "480p SD", size: "~350 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85920?hash=AgAD0h", fastDownload: "https://gofile.io/d/hybhFaRg" },
+                    { res: "720p HD", size: "~800 MB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85870?hash=AgADzR", fastDownload: "https://gofile.io/d/qrO7uI22" },
+                    { res: "1080p FHD", size: "~1.6 GB", cloudDownload: "https://ml-filetolink-botz-ddc645471993.herokuapp.com/85872?hash=AgAD1x", fastDownload: "https://gofile.io/d/Z8YfWWlr" }
                 ]
             }
         ]
