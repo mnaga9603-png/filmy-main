@@ -210,29 +210,30 @@
                     <span id="moviesCountBadge" class="text-xs text-gray-400 font-medium">Showing Items</span>
                 </div>
 
-                <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-                    <button onclick="filterCategory('ALL')" class="filter-chip active bg-brand-red text-white px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap shadow-md">
-                        🔥 All Content
-                    </button>
-                    <button onclick="filterCategory('Tollywood')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-gray-300 hover:text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        🎬 Tollywood
-                    </button>
-                    <button onclick="filterCategory('Series')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-emerald-400 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        📺 Web Series
-                    </button>
-                    <button onclick="filterCategory('Aha')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-orange-400 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        🧡 Aha Specials
-                    </button>
-                    <button onclick="filterCategory('Netflix')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-red-400 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        🔴 Netflix
-                    </button>
-                    <button onclick="filterCategory('Prime')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-blue-400 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        💙 Prime Video
-                    </button>
-                    <button onclick="filterCategory('4K')" class="filter-chip bg-brand-cardBg hover:bg-brand-cardBorder text-yellow-400 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap border border-brand-cardBorder">
-                        ✨ 4K UHD
-                    </button>
-                </div>
+                <!-- Categories Filter Bar -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none text-xs font-bold">
+    <button onclick="filterCategory('ALL')" class="filter-chip active bg-brand-red text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all shadow-md">
+        <i class="fas fa-layer-group mr-1.5"></i> All Content
+    </button>
+    <button onclick="filterCategory('DVDRips')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-compact-disc mr-1.5"></i> DVDRips
+    </button>
+    <button onclick="filterCategory('Hotstar')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-star mr-1.5 text-blue-400"></i> Hotstar
+    </button>
+    <button onclick="filterCategory('Prime')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-play mr-1.5 text-cyan-400"></i> Prime
+    </button>
+    <button onclick="filterCategory('Netflix')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-film mr-1.5 text-red-500"></i> Netflix
+    </button>
+    <button onclick="filterCategory('Zee5')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-tv mr-1.5 text-purple-400"></i> Zee5
+    </button>
+    <button onclick="filterCategory('Series')" class="filter-chip bg-brand-cardBg text-gray-300 hover:text-white px-4 py-2 rounded-xl whitespace-nowrap transition-all border border-brand-cardBorder">
+        <i class="fas fa-clapperboard mr-1.5 text-yellow-400"></i> Series
+    </button>
+</div>
             </section>
 
             <!-- Main Grid Layout -->
