@@ -4,25 +4,24 @@ const moviesDatabase = [
         id: 1,
         type: "movie",
         featured: true,
-        title: "Pushpa 2: The Rule",
-        year: "2024",
+        title: "Mister Middleclass",
+        year: "2026",
         rating: "8.9",
-        quality: "4K UHD",
+        quality: "1080p FHD",
         category: "Netflix", // DVDRips / Netflix / Prime / Hotstar / Zee5
         ott: "Netflix",
         language: "Telugu (Original)",
         genres: "Action / Crime / Drama",
         director: "Sukumar",
         cast: "Allu Arjun, Rashmika Mandanna, Fahadh Faasil",
-        poster: "https://image.tmdb.org/t/p/w500/b0mx1pB3KptpZqT6m6z2s9p2wX5.jpg",
-        backdrop: "https://image.tmdb.org/t/p/original/8bp9L2fR5qf1aA5oY5UvC9H3k3S.jpg",
+        poster: "images/mister middleclass.jpg",
+        backdrop: "images/misteer.jpg",
         trailerUrl: "https://www.youtube.com/embed/g3L556vA3Bw",
         description: "Pushpa Raj expands his syndicate globally while locked in an intense battle of wits and power against SP Bhanwar Singh Shekhawat.",
         downloads: [
-            { quality: "480p SD - Mobile Quality", size: "~450 MB | x264", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "720p HD - Standard Quality", size: "~1.2 GB | HEVC", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "1080p FHD - Full HD Quality", size: "~2.4 GB | 5.1 Audio", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" },
-            { quality: "4K UHD - Ultra HD HDR", size: "~6.5 GB | Atmos", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sample" }
+            { quality: "480p SD - Mobile Quality", size: "~450 MB | x264", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/oRYc0Qq1" },
+            { quality: "720p HD - Standard Quality", size: "~1.4 GB | HEVC", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/sOmlwRNQ" },
+            { quality: "1080p FHD - Full HD Quality", size: "~3 GB | 5.1 Audio", cloud: "https://t.me/+fKBhkM9ddl5lNWQ1", fast: "https://gofile.io/d/yYliuUOu" }
         ]
     },
     {
