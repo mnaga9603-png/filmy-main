@@ -1,5 +1,28 @@
 // ================= DATABASE (MOVIES + WEB SERIES + BIGG BOSS) =================
 const moviesDatabase = [
+    {id: 6,
+        type: "movie",
+        featured: true,
+        title: "Jana Nayakudu",
+        year: "2026",
+        rating: "8.9",
+        quality: "1080P FHD",
+        category: "Netflix", // DVDRips / Netflix / Prime / Hotstar / Zee5
+        ott: "4K UHD",
+        language: "Telugu (Original)",
+        genres: "Action / Crime / Drama",
+        director: "Sukumar",
+        cast: "Allu Arjun, Rashmika Mandanna, Fahadh Faasil",
+        poster: "images/jananayagan.jpg",
+        backdrop: "images/jana1",
+        trailerUrl: "https://www.youtube.com/embed/g3L556vA3Bw",
+        description: "Beautiful Movie to Watch This Weekend",
+        downloads: [
+            { quality: "480p SD - Mobile Quality", size: "~450 MB | x264", cloud: "---", fast: "https://gofile.io/d/pzCglQ1J" },
+            { quality: "720p HD - Standard Quality", size: "~1.2 GB | HEVC", cloud: "---", fast: "https://gofile.io/d/PGVHAW3a" },
+            { quality: "1080p FHD - Full HD Quality", size: "~2.4 GB | 5.1 Audio", cloud: "___", fast: "https://gofile.io/d/yi79lWl2" }
+        ]
+    },
     {
         id: 5,
         type: "movie",
